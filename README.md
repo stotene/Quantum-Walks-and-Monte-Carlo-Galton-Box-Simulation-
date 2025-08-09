@@ -1,34 +1,53 @@
-# 🎲 Classical Galton Box Simulation (Plinko) using Python
+# Quantum Walks and Monte Carlo: Galton Box Simulation
 
-This project simulates a Galton Box (also known as the Plinko game) using classical Monte Carlo methods in Python. It models how particles randomly fall through pegs, making left/right decisions at each level, ultimately forming a binomial distribution — a foundational concept in both classical and quantum statistics.
-
-> This simulation sets the stage for building a Quantum Galton Box using Quantum Walks in Qiskit.
+This repository contains my capstone project for the Womanium & WISER Quantum Program 2025, where I implemented both the classical Monte Carlo and quantum walk versions of the Galton Box (Plinko machine). The project demonstrates how quantum principles like superposition and interference affect probability distributions compared to classical randomness.
 
 ---
 
-## Project Goals
+Project Overview
 
-- ✅ Simulate the classical Galton Box using Python
-- ✅ Understand Monte Carlo behavior and probability distributions
-- ✅ Visualize how random walks lead to binomial outcomes
-- 🔜 Prepare for quantum implementation using Qiskit
-
----
-
-## Background
-
-A Galton Box is a simple device invented by Sir Francis Galton that demonstrates how individual random events aggregate into a predictable distribution. At each level, a particle randomly chooses left or right. The final position depends on how many right moves were made, producing a binomial (or approximately normal) distribution.
+The Galton Box is a statistical device where particles drop through multiple layers of pins, randomly moving left or right, eventually forming a binomial distribution.  
+In this project, I:
+- Built a classical Monte Carlo simulation using Python and NumPy.
+- Designed a quantum version using Qiskit and PennyLane with **Hadamard-based quantum walks**.
+- Developed a biased rotation gate (`RY(θ)`) to simulate asymmetrical left/right probabilities.
+- Compared results to highlight differences between classical randomness and quantum interference.
 
 ---
 
-## Tools & Libraries
+Key Concepts
 
-- Python 3.x
-- NumPy
-- Matplotlib
-- Qiskit (for quantum extension in later stages)
+- Monte Carlo Simulation – Random sampling for statistical modeling.
+- Quantum Walks – Quantum analogues of random walks, using superposition.
+- Biased Rotation Gates – Control movement probabilities by adjusting `RY` rotation angles.
+- Qiskit & PennyLane – Quantum computing frameworks for simulation and visualization.
 
-Install dependencies using:
+---
 
+## Repository Structure
+Quantum-Walks-and-Monte-Carlo-Galton-Box-Simulation
+├── classical_galton_box.py # My classical Monte Carlo simulation
+├── quantum_galton_box.py # My quantum walk simulation
+├── biased_rotation_gate.ipynb # Biased RY gate demonstration
+├── results/ # Output plots and data
+├── README.md # Documentation
+└── requirements.txt # Dependencies
+
+
+---
+
+## Installation
 ```bash
-pip install numpy matplotlib qiskit
+git clone https://github.com/stotene/Quantum-Walks-and-Monte-Carlo-Galton-Box-Simulation.git
+cd Quantum-Walks-and-Monte-Carlo-Galton-Box-Simulation
+pip install -r requirements.txt
+
+Dependencies:
+
+numpy
+
+matplotlib
+
+qiskit
+
+pennylane
