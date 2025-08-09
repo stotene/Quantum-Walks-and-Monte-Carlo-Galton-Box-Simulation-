@@ -1,13 +1,13 @@
 # Quantum Walks and Monte Carlo: Galton Box Simulation
 
-This repository contains my capstone project for the Womanium & WISER Quantum Program 2025, where I implemented both the classical Monte Carlo and quantum walk versions of the Galton Box (Plinko machine). The project demonstrates how quantum principles like superposition and interference affect probability distributions compared to classical randomness.
+This repository contains our capstone project for the Womanium & WISER Quantum Program 2025, where we implemented both the classical Monte Carlo and quantum walk versions of the Galton Box (Plinko machine). The project demonstrates how quantum principles like superposition and interference affect probability distributions compared to classical randomness.
 
 ---
 
 Project Overview
 
 The Galton Box is a statistical device where particles drop through multiple layers of pins, randomly moving left or right, eventually forming a binomial distribution.  
-In this project, I:
+In this project, we:
 - Built a classical Monte Carlo simulation using Python and NumPy.
 - Designed a quantum version using Qiskit and PennyLane with **Hadamard-based quantum walks**.
 - Developed a biased rotation gate (`RY(θ)`) to simulate asymmetrical left/right probabilities.
